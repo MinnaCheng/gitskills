@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewProblem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/problem" />
+
+    <TextView
+        android:id="@+id/textViewNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewProblem"
+        android:layout_alignBottom="@+id/textViewProblem"
+        android:layout_alignParentRight="true"
+        android:text="@string/newuser" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewProblem"
+        android:layout_alignRight="@+id/textViewNewUser"
+        android:layout_below="@+id/textViewPsW"
+        android:layout_marginTop="35dp"
+        android:background="@color/green"
+        android:text="@string/login"
+        android:clickable="false"
+         />
+
+    <EditText
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonLogin"
+        android:layout_alignRight="@+id/buttonLogin"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/username" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/textViewPsW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewName"
+        android:layout_alignRight="@+id/textViewName"
+        android:layout_centerVertical="true"
+        android:digits="1234567890zxcvbnmasdfghjklqwertyuiopZXCVBNMASDFGHJKLQWERTYUIOP"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

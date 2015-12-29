@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">week10_day05_LoginTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="username">用户名</string>
+    <string name="password">密码(最低6位数字和字符组合)</string>
+    <string name="login">登录</string>
+    <string name="problem">登录遇到问题？</string>
+    <string name="newuser">新用户</string>
+
+</resources>
